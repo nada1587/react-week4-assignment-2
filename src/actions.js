@@ -5,20 +5,29 @@ export function setRestaurants() {
   };
 }
 
-export function updateName() {
+export function updateName(shopName) {
   return {
     type: 'updateName',
+    payload: {
+      shopName,
+    },
   };
 }
 
-export function updateType() {
+export function updateType(shopType) {
   return {
     type: 'updateType',
+    payload: {
+      shopType,
+    },
   };
 }
 
-export function updateAddress() {
+export function updateAddress(shopAddress) {
   return {
     type: 'updateAddress',
+    payload: {
+      shopAddress,
+    },
   };
 }
